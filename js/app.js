@@ -11,11 +11,11 @@
   // keyboard
   body.addEventListener('keydown', function(event) {
     switch (event.which) {
-      case 38: var key = 'up';   setActive(up,key);break;
-      case 40: var key = 'down'; setActive(down,key);break;
-      case 37: var key = 'left';setActive(left,key);break;
-      case 39: var key = 'right';setActive(right,key);break;
-      case 32: var key = 'space';setActive(space,key);break;
+      case 38: var key = 'up';    setActive(up,key);break;
+      case 40: var key = 'down';  setActive(down,key);break;
+      case 37: var key = 'left';  setActive(left,key);break;
+      case 39: var key = 'right'; setActive(right,key);break;
+      case 32: var key = 'space'; setActive(space,key);break;
     }
   }, false);
   body.addEventListener('keyup', function(event) {
@@ -35,8 +35,7 @@
 
     active = id;
     key = key.toString()
-    active.className = 'active action';
-
+    active.className = 'action active';
 
     var sndmp3 = 'audio/'+key+'.mp3';
     var sndogg = 'audio/'+key+'.ogg';
@@ -46,7 +45,6 @@
 
     soundogg = new Audio(sndogg);
     soundogg.play();
-
   }
 
   function removeActive() {
