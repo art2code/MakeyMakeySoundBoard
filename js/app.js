@@ -56,6 +56,7 @@
     var sound = new Howl({
       urls: ['audio/'+key+'.mp3','audio/'+key+'.ogg']
     }).play();
+
   }
 
   function removeActive() {
@@ -66,4 +67,3 @@
   }
 
 })();
-
