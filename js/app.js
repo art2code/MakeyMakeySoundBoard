@@ -1,4 +1,5 @@
 (function(){
+
   var body     = document;
   var left     = body.getElementById('left'),
       right    = body.getElementById('right'),
@@ -48,7 +49,6 @@
   }, false);
 
   function setActive(id,key) {
-
     active = id;
     key = key.toString()
     active.className = 'active action';
@@ -56,7 +56,6 @@
     var sound = new Howl({
       urls: ['audio/'+key+'.mp3','audio/'+key+'.ogg']
     }).play();
-
   }
 
   function removeActive() {
@@ -65,5 +64,6 @@
       }
     active = null;
   }
+
 
 })();
